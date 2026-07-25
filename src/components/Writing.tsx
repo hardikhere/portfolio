@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { getMediumPosts } from "@/lib/medium";
+import { MEDIUM_URL } from "@/lib/links";
 
 function formatDate(dateStr: string): string {
   const date = new Date(dateStr);
@@ -21,7 +22,7 @@ export async function Writing() {
           Writing
         </h2>
         <a
-          href="https://medium.com/@web.hardikhere"
+          href={MEDIUM_URL}
           target="_blank"
           rel="noreferrer"
           className="text-xs text-muted transition-colors hover:text-foreground"
@@ -34,7 +35,7 @@ export async function Writing() {
         <p className="mt-6 text-sm text-muted">
           Posts are on{" "}
           <a
-            href="https://medium.com/@web.hardikhere"
+            href={MEDIUM_URL}
             target="_blank"
             rel="noreferrer"
             className="text-accent hover:underline"

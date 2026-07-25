@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { EMAIL, GITHUB_URL, MEDIUM_URL, X_URL } from "@/lib/links";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -27,17 +28,14 @@ const personJsonLd = {
   name: "Hardik Khanchandani",
   jobTitle: "Senior React Native Engineer",
   url: SITE_URL,
-  email: "mailto:web.hardikhere@gmail.com",
+  email: `mailto:${EMAIL}`,
   address: {
     "@type": "PostalAddress",
     addressLocality: "Bengaluru",
     addressRegion: "Karnataka",
     addressCountry: "IN",
   },
-  sameAs: [
-    "https://github.com/hardikhere",
-    "https://medium.com/@web.hardikhere",
-  ],
+  sameAs: [GITHUB_URL, MEDIUM_URL, X_URL],
   worksFor: {
     "@type": "Organization",
     name: "Vybout",

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { RESUME_URL } from "@/lib/links";
+import { EMAIL, GITHUB_URL, RESUME_URL, X_URL } from "@/lib/links";
 
 const COVER_PHOTO =
   "https://imagedelivery.net/bN8wtBatORoBF6VNcDJRLQ/c8236398-c19c-438f-2efa-83fcca781100/public";
@@ -48,18 +48,26 @@ export function Hero() {
             Resume ↓
           </a>
           <a
-            href="mailto:web.hardikhere@gmail.com"
+            href={`mailto:${EMAIL}`}
             className="rounded-full border border-border px-4 py-2 font-medium transition-colors hover:border-foreground"
           >
             Say hi
           </a>
           <a
-            href="https://github.com/hardikhere"
+            href={GITHUB_URL}
             target="_blank"
             rel="noreferrer"
             className="rounded-full border border-border px-4 py-2 font-medium transition-colors hover:border-foreground"
           >
             GitHub
+          </a>
+          <a
+            href={X_URL}
+            target="_blank"
+            rel="noreferrer"
+            className="rounded-full border border-border px-4 py-2 font-medium transition-colors hover:border-foreground"
+          >
+            X
           </a>
         </div>
       </div>

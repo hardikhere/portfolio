@@ -1,4 +1,4 @@
-import { RESUME_URL } from "@/lib/links";
+import { EMAIL, GITHUB_URL, MEDIUM_URL, RESUME_URL, X_URL } from "@/lib/links";
 
 export function Footer() {
   return (
@@ -8,16 +8,13 @@ export function Footer() {
           Contact
         </h2>
         <p className="mt-4 text-base">
-          <a
-            href="mailto:web.hardikhere@gmail.com"
-            className="text-accent hover:underline"
-          >
-            web.hardikhere@gmail.com
+          <a href={`mailto:${EMAIL}`} className="text-accent hover:underline">
+            {EMAIL}
           </a>
         </p>
         <div className="mt-4 flex gap-4 text-sm text-muted">
           <a
-            href="https://github.com/hardikhere"
+            href={GITHUB_URL}
             target="_blank"
             rel="noreferrer"
             className="transition-colors hover:text-foreground"
@@ -25,7 +22,15 @@ export function Footer() {
             GitHub
           </a>
           <a
-            href="https://medium.com/@web.hardikhere"
+            href={X_URL}
+            target="_blank"
+            rel="noreferrer"
+            className="transition-colors hover:text-foreground"
+          >
+            X
+          </a>
+          <a
+            href={MEDIUM_URL}
             target="_blank"
             rel="noreferrer"
             className="transition-colors hover:text-foreground"

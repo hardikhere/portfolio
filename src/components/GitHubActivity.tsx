@@ -1,11 +1,7 @@
-import { getTopRepos } from "@/lib/github";
-
 const GITHUB_USERNAME = "hardikhere";
 const CHART_URL = `https://ghchart.rshah.org/2563eb/${GITHUB_USERNAME}`;
 
-export async function GitHubActivity() {
-  const repos = await getTopRepos();
-
+export function GitHubActivity() {
   return (
     <section className="mx-auto max-w-3xl px-6 py-12">
       <div className="flex items-baseline justify-between">
@@ -30,32 +26,6 @@ export async function GitHubActivity() {
           className="min-w-[600px]"
         />
       </div>
-
-      {repos.length > 0 && (
-        <ul className="mt-4 grid gap-3 sm:grid-cols-2">
-          {repos.map((repo) => (
-            <li key={repo.name}>
-              <a
-                href={repo.url}
-                target="_blank"
-                rel="noreferrer"
-                className="block h-full rounded-lg border border-border p-4 transition-colors hover:border-foreground"
-              >
-                <p className="text-sm font-medium">{repo.name}</p>
-                {repo.description && (
-                  <p className="mt-1 line-clamp-2 text-sm text-muted">
-                    {repo.description}
-                  </p>
-                )}
-                <div className="mt-2 flex items-center gap-3 font-mono text-xs text-muted">
-                  {repo.language && <span>{repo.language}</span>}
-                  <span>★ {repo.stars}</span>
-                </div>
-              </a>
-            </li>
-          ))}
-        </ul>
-      )}
     </section>
   );
 }
