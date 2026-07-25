@@ -23,13 +23,13 @@ export default function Home() {
         <Experience />
         <Education />
         <Skills />
-        <Testimonials />
         <GitHubActivity />
         <Writing />
         <Causes />
         <Exploring />
         <Watching />
         <Reading />
+        <Testimonials />
       </main>
       <Footer />
     </>

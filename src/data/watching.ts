@@ -28,6 +28,10 @@ export const watching: WatchingGroup[] = [
       { title: "Into the Wild" },
       { title: "Awakenings" },
       { title: "Nightcrawler" },
+      { title: "Spirited Away" },
+      { title: "My Neighbor Totoro" },
+      { title: "Princess Mononoke" },
+      { title: "Howl's Moving Castle" },
     ],
   },
 ];
