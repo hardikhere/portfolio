@@ -2,6 +2,7 @@ export type ExperienceEntry = {
   role: string;
   company: string;
   companyUrl?: string;
+  logo?: string;
   period: string;
   location: string;
   highlights: string[];
@@ -11,6 +12,7 @@ export const experience: ExperienceEntry[] = [
   {
     role: "Co-Founder & Founding Product Engineer",
     company: "Vybout",
+    logo: "https://imagedelivery.net/bN8wtBatORoBF6VNcDJRLQ/3b735fe9-51e0-4bfa-aab0-fb8ae76ae400/public",
     period: "08/2025 — 05/2026",
     location: "Bengaluru, India",
     highlights: [
@@ -21,6 +23,7 @@ export const experience: ExperienceEntry[] = [
   {
     role: "Software Engineer (Mobile)",
     company: "Zepto",
+    logo: "https://imagedelivery.net/bN8wtBatORoBF6VNcDJRLQ/98f3abf9-b8bb-4d09-071f-c1c6a1dacf00/public",
     period: "10/2024 — 08/2025",
     location: "Bengaluru, India",
     highlights: [
@@ -31,6 +34,7 @@ export const experience: ExperienceEntry[] = [
   {
     role: "Software Engineer (Mobile)",
     company: "Unacademy",
+    logo: "https://imagedelivery.net/bN8wtBatORoBF6VNcDJRLQ/66b39c85-ab77-4382-e01a-53da02766300/public",
     period: "01/2024 — 10/2024",
     location: "Bengaluru, India",
     highlights: [
