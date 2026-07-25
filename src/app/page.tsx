@@ -5,6 +5,7 @@ import { Experience } from "@/components/Experience";
 import { Skills } from "@/components/Skills";
 import { GitHubActivity } from "@/components/GitHubActivity";
 import { Writing } from "@/components/Writing";
+import { Causes } from "@/components/Causes";
 import { Exploring } from "@/components/Exploring";
 import { Footer } from "@/components/Footer";
 
@@ -19,6 +20,7 @@ export default function Home() {
         <Skills />
         <GitHubActivity />
         <Writing />
+        <Causes />
         <Exploring />
       </main>
       <Footer />
