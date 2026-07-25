@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 const COVER_PHOTO =
-  "https://imagedelivery.net/bN8wtBatORoBF6VNcDJRLQ/a2a79735-4440-433f-3a5d-f2998d45d600/public";
+  "https://imagedelivery.net/bN8wtBatORoBF6VNcDJRLQ/c8236398-c19c-438f-2efa-83fcca781100/public";
 const PROFILE_PHOTO =
   "https://imagedelivery.net/bN8wtBatORoBF6VNcDJRLQ/0a728240-f029-4241-e003-cf220f9aab00/public";
 
