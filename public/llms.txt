@@ -1,0 +1,21 @@
+# Hardik Khanchandani
+
+> Portfolio of Hardik Khanchandani, a Senior React Native Engineer based in
+> Bengaluru, India, with 4.5+ years building mobile applications used by
+> millions of users. Co-Founder & Founding Product Engineer at Vybout;
+> previously Software Engineer (Mobile) at Zepto and Unacademy.
+
+## Sections
+
+- [Experience](https://portfolio-7oqp.vercel.app/#work): Work history — Vybout, Zepto, Unacademy, Mosaic Wellness + Clumio.
+- [Skills](https://portfolio-7oqp.vercel.app/#work): Frontend/mobile, languages, backend/BaaS, and tooling.
+- [Writing](https://portfolio-7oqp.vercel.app/#writing): Articles, mirrored from Medium.
+- [Exploring](https://portfolio-7oqp.vercel.app/#exploring): Photography.
+- [Contact](https://portfolio-7oqp.vercel.app/#contact): Email and social links.
+
+## Resources
+
+- [Resume (PDF)](https://drive.google.com/file/d/110ooNd2krZUZnBph_EdAu2gCLsEUL3re/view?usp=sharing)
+- [GitHub](https://github.com/hardikhere)
+- [Medium](https://medium.com/@web.hardikhere)
+- [Email](mailto:web.hardikhere@gmail.com)
