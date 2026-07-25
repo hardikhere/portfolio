@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { RESUME_URL } from "@/lib/links";
 
 const COVER_PHOTO =
   "https://imagedelivery.net/bN8wtBatORoBF6VNcDJRLQ/c8236398-c19c-438f-2efa-83fcca781100/public";
@@ -39,7 +40,9 @@ export function Hero() {
         </p>
         <div className="mt-6 flex flex-wrap gap-4 text-sm">
           <a
-            href="/resume.pdf"
+            href={RESUME_URL}
+            target="_blank"
+            rel="noreferrer"
             className="rounded-full border border-border px-4 py-2 font-medium transition-colors hover:border-foreground"
           >
             Resume ↓

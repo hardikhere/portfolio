@@ -1,3 +1,5 @@
+import { RESUME_URL } from "@/lib/links";
+
 export function Footer() {
   return (
     <footer id="contact" className="mx-auto max-w-3xl px-6 py-16">
@@ -30,7 +32,12 @@ export function Footer() {
           >
             Medium
           </a>
-          <a href="/resume.pdf" className="transition-colors hover:text-foreground">
+          <a
+            href={RESUME_URL}
+            target="_blank"
+            rel="noreferrer"
+            className="transition-colors hover:text-foreground"
+          >
             Resume
           </a>
         </div>
