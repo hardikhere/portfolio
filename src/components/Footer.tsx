@@ -1,4 +1,12 @@
-import { CALENDLY_URL, EMAIL, GITHUB_URL, MEDIUM_URL, RESUME_URL, X_URL } from "@/lib/links";
+import {
+  CALENDLY_URL,
+  EMAIL,
+  GITHUB_URL,
+  LINKEDIN_URL,
+  MEDIUM_URL,
+  RESUME_URL,
+  X_URL,
+} from "@/lib/links";
 
 export function Footer() {
   return (
@@ -30,6 +38,14 @@ export function Footer() {
             className="transition-colors hover:text-foreground"
           >
             GitHub
+          </a>
+          <a
+            href={LINKEDIN_URL}
+            target="_blank"
+            rel="noreferrer"
+            className="transition-colors hover:text-foreground"
+          >
+            LinkedIn
           </a>
           <a
             href={X_URL}

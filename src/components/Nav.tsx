@@ -1,8 +1,11 @@
 const LINKS = [
   { href: "#work", label: "Work" },
+  { href: "#education", label: "Education" },
   { href: "#writing", label: "Writing" },
   { href: "#causes", label: "Causes" },
   { href: "#exploring", label: "Exploring" },
+  { href: "#watching", label: "Watching" },
+  { href: "#reading", label: "Reading" },
   { href: "#contact", label: "Contact" },
 ];
 

@@ -1,5 +1,12 @@
 import Image from "next/image";
-import { CALENDLY_URL, EMAIL, GITHUB_URL, RESUME_URL, X_URL } from "@/lib/links";
+import {
+  CALENDLY_URL,
+  EMAIL,
+  GITHUB_URL,
+  LINKEDIN_URL,
+  RESUME_URL,
+  X_URL,
+} from "@/lib/links";
 import { COVER_PHOTO, PROFILE_PHOTO } from "@/lib/site";
 
 export function Hero() {
@@ -64,6 +71,14 @@ export function Hero() {
             className="rounded-full border border-border px-4 py-2 font-medium transition-colors hover:border-foreground"
           >
             GitHub
+          </a>
+          <a
+            href={LINKEDIN_URL}
+            target="_blank"
+            rel="noreferrer"
+            className="rounded-full border border-border px-4 py-2 font-medium transition-colors hover:border-foreground"
+          >
+            LinkedIn
           </a>
           <a
             href={X_URL}
