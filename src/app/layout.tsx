@@ -1,6 +1,8 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { EMAIL, GITHUB_URL, MEDIUM_URL, X_URL } from "@/lib/links";
+import { PROFILE_PHOTO, SITE_DESCRIPTION, SITE_NAME, SITE_TITLE, SITE_URL } from "@/lib/site";
+import { skillGroups } from "@/data/skills";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -13,21 +15,73 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const SITE_URL = "https://portfolio-7oqp.vercel.app";
-
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: "Hardik Khanchandani — Senior React Native Engineer",
-  description:
-    "Portfolio of Hardik Khanchandani: mobile engineering work, writing, and photography.",
+  title: {
+    default: SITE_TITLE,
+    template: `%s | ${SITE_NAME}`,
+  },
+  description: SITE_DESCRIPTION,
+  keywords: [
+    "Hardik Khanchandani",
+    "React Native Engineer",
+    "React Native Developer",
+    "Mobile Engineer Bengaluru",
+    "Senior Software Engineer",
+    "Vybout",
+    "Zepto",
+    "Unacademy",
+  ],
+  authors: [{ name: SITE_NAME, url: SITE_URL }],
+  creator: SITE_NAME,
+  publisher: SITE_NAME,
+  category: "technology",
+  alternates: {
+    canonical: SITE_URL,
+  },
+  openGraph: {
+    type: "website",
+    url: SITE_URL,
+    siteName: SITE_NAME,
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
+    creator: "@HardikKhanchan4",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
+  formatDetection: {
+    telephone: false,
+  },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#fafaf9",
+  colorScheme: "light",
 };
 
 const personJsonLd = {
   "@context": "https://schema.org",
   "@type": "Person",
-  name: "Hardik Khanchandani",
+  name: SITE_NAME,
   jobTitle: "Senior React Native Engineer",
+  description: SITE_DESCRIPTION,
   url: SITE_URL,
+  image: PROFILE_PHOTO,
   email: `mailto:${EMAIL}`,
   address: {
     "@type": "PostalAddress",
@@ -45,6 +99,7 @@ const personJsonLd = {
     { "@type": "Organization", name: "Unacademy" },
     { "@type": "Organization", name: "Mosaic Wellness" },
   ],
+  knowsAbout: skillGroups.flatMap((group) => group.items),
 };
 
 export default function RootLayout({

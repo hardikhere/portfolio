@@ -1,10 +1,6 @@
 import Image from "next/image";
 import { EMAIL, GITHUB_URL, RESUME_URL, X_URL } from "@/lib/links";
-
-const COVER_PHOTO =
-  "https://imagedelivery.net/bN8wtBatORoBF6VNcDJRLQ/c8236398-c19c-438f-2efa-83fcca781100/public";
-const PROFILE_PHOTO =
-  "https://imagedelivery.net/bN8wtBatORoBF6VNcDJRLQ/0a728240-f029-4241-e003-cf220f9aab00/public";
+import { COVER_PHOTO, PROFILE_PHOTO } from "@/lib/site";
 
 export function Hero() {
   return (
@@ -12,7 +8,7 @@ export function Hero() {
       <div className="relative h-48 w-full overflow-hidden sm:h-64">
         <Image
           src={COVER_PHOTO}
-          alt="Cover photo"
+          alt=""
           fill
           priority
           sizes="100vw"

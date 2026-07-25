@@ -1,6 +1,5 @@
 import type { MetadataRoute } from "next";
-
-const SITE_URL = "https://portfolio-7oqp.vercel.app";
+import { SITE_URL } from "@/lib/site";
 
 const AI_CRAWLERS = [
   "GPTBot",
