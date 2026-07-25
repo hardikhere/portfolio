@@ -45,6 +45,7 @@ export const experience: ExperienceEntry[] = [
   {
     role: "Software Engineer",
     company: "Mosaic Wellness + Clumio",
+    logo: "https://media.licdn.com/dms/image/v2/C510BAQGJ0hY6z34Ehg/company-logo_200_200/company-logo_200_200/0/1630596350109/mosaicwellness_logo?e=2147483647&v=beta&t=7ZNVCHoI8JAoyBHH9Sc_oQelHBXvjp-wPdoYDaoIQNs",
     period: "05/2022 — 08/2023",
     location: "Bengaluru, India",
     highlights: [
