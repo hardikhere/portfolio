@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { getMediumPosts } from "@/lib/medium";
 
 function formatDate(dateStr: string): string {
@@ -50,19 +51,32 @@ export async function Writing() {
                 href={post.link}
                 target="_blank"
                 rel="noreferrer"
-                className="block rounded-lg border border-border p-4 transition-colors hover:border-foreground"
+                className="block overflow-hidden rounded-lg border border-border transition-colors hover:border-foreground"
               >
-                <p className="font-mono text-xs text-muted">
-                  {formatDate(post.pubDate)}
-                </p>
-                <h3 className="mt-2 text-sm font-medium leading-snug">
-                  {post.title}
-                </h3>
-                {post.excerpt && (
-                  <p className="mt-2 text-sm leading-relaxed text-muted">
-                    {post.excerpt}
-                  </p>
+                {post.thumbnail && (
+                  <div className="relative aspect-[16/9] w-full">
+                    <Image
+                      src={post.thumbnail}
+                      alt={post.title}
+                      fill
+                      sizes="(min-width: 640px) 50vw, 100vw"
+                      className="object-cover"
+                    />
+                  </div>
                 )}
+                <div className="p-4">
+                  <p className="font-mono text-xs text-muted">
+                    {formatDate(post.pubDate)}
+                  </p>
+                  <h3 className="mt-2 text-sm font-medium leading-snug">
+                    {post.title}
+                  </h3>
+                  {post.excerpt && (
+                    <p className="mt-2 text-sm leading-relaxed text-muted">
+                      {post.excerpt}
+                    </p>
+                  )}
+                </div>
               </a>
             </li>
           ))}

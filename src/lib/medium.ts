@@ -8,10 +8,16 @@ export type MediumPost = {
   link: string;
   pubDate: string;
   excerpt: string;
+  thumbnail: string | null;
 };
 
 function stripHtml(html: string): string {
   return html.replace(/<[^>]*>/g, "").trim();
+}
+
+function firstImage(html: string): string | null {
+  const match = html.match(/<img[^>]*src="([^"]+)"/);
+  return match ? match[1] : null;
 }
 
 export async function getMediumPosts(): Promise<MediumPost[]> {
@@ -41,6 +47,7 @@ export async function getMediumPosts(): Promise<MediumPost[]> {
         link: item.link ?? "#",
         pubDate: item.pubDate ?? "",
         excerpt: excerpt ? `${excerpt}…` : "",
+        thumbnail: firstImage(description),
       };
     });
   } catch {
