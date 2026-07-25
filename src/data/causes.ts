@@ -25,4 +25,9 @@ export const causes: Cause[] = [
     description:
       "Access to quality education is the single biggest lever for India's future — worth every bit of support.",
   },
+  {
+    title: "Love & Humanity",
+    description:
+      "I don't follow any traditional religion — my faith is in love and humanity.",
+  },
 ];
