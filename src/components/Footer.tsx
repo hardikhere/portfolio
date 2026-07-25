@@ -1,4 +1,4 @@
-import { EMAIL, GITHUB_URL, MEDIUM_URL, RESUME_URL, X_URL } from "@/lib/links";
+import { CALENDLY_URL, EMAIL, GITHUB_URL, MEDIUM_URL, RESUME_URL, X_URL } from "@/lib/links";
 
 export function Footer() {
   return (
@@ -10,6 +10,16 @@ export function Footer() {
         <p className="mt-4 text-base">
           <a href={`mailto:${EMAIL}`} className="text-accent hover:underline">
             {EMAIL}
+          </a>
+        </p>
+        <p className="mt-2 text-sm">
+          <a
+            href={CALENDLY_URL}
+            target="_blank"
+            rel="noreferrer"
+            className="text-accent hover:underline"
+          >
+            Book a 15-min call →
           </a>
         </p>
         <div className="mt-4 flex gap-4 text-sm text-muted">

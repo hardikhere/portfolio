@@ -5,3 +5,4 @@ export const GITHUB_URL = "https://github.com/hardikhere";
 export const MEDIUM_URL = "https://medium.com/@web.hardikhere";
 export const X_URL = "https://x.com/HardikKhanchan4";
 export const EMAIL = "web.hardikhere@gmail.com";
+export const CALENDLY_URL = "https://calendly.com/web-hardikhere/15min";

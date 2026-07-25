@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { EMAIL, GITHUB_URL, RESUME_URL, X_URL } from "@/lib/links";
+import { CALENDLY_URL, EMAIL, GITHUB_URL, RESUME_URL, X_URL } from "@/lib/links";
 import { COVER_PHOTO, PROFILE_PHOTO } from "@/lib/site";
 
 export function Hero() {
@@ -35,6 +35,14 @@ export function Hero() {
           Senior React Native Engineer building mobile products end to end.
         </p>
         <div className="mt-6 flex flex-wrap gap-4 text-sm">
+          <a
+            href={CALENDLY_URL}
+            target="_blank"
+            rel="noreferrer"
+            className="rounded-full bg-accent px-4 py-2 font-medium text-white transition-opacity hover:opacity-90"
+          >
+            Book a 15-min call
+          </a>
           <a
             href={RESUME_URL}
             target="_blank"
