@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { photos } from "@/data/photos";
 
 export function Exploring() {
@@ -8,14 +9,18 @@ export function Exploring() {
       </h2>
       <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
         {photos.map((photo) => (
-          // eslint-disable-next-line @next/next/no-img-element
-          <img
+          <div
             key={photo.src}
-            src={photo.src}
-            alt={photo.alt}
-            loading="lazy"
-            className="aspect-square w-full rounded-lg border border-border object-cover"
-          />
+            className="relative aspect-square w-full overflow-hidden rounded-lg border border-border"
+          >
+            <Image
+              src={photo.src}
+              alt={photo.alt}
+              fill
+              sizes="(min-width: 640px) 25vw, 50vw"
+              className="object-cover"
+            />
+          </div>
         ))}
       </div>
     </section>
