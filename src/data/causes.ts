@@ -21,8 +21,8 @@ export const causes: Cause[] = [
       "Skeptical of unproven claims sold as fact. Evidence over anecdotes, always.",
   },
   {
-    title: "Against the Burqa",
+    title: "Educating India",
     description:
-      "Opposed to any dress code — religious or cultural — that's imposed rather than freely chosen.",
+      "Access to quality education is the single biggest lever for India's future — worth every bit of support.",
   },
 ];
