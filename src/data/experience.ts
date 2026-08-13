@@ -10,10 +10,20 @@ export type ExperienceEntry = {
 
 export const experience: ExperienceEntry[] = [
   {
+    role: "Builder (Senior React Native Engineer)",
+    company: "Cars24",
+    logo: "https://etimg.etb2bimg.com/photo/128114899.cms",
+    period: "08/2026 — Present",
+    location: "Bengaluru, India",
+    highlights: [
+      "Joined as a Senior React Native Engineer to build and scale mobile experiences at Cars24.",
+    ],
+  },
+  {
     role: "Co-Founder & Founding Product Engineer",
     company: "Vybout",
     logo: "https://imagedelivery.net/bN8wtBatORoBF6VNcDJRLQ/3b735fe9-51e0-4bfa-aab0-fb8ae76ae400/public",
-    period: "08/2025 — 05/2026",
+    period: "08/2025 — 08/2026",
     location: "Bengaluru, India",
     highlights: [
       "Built and scaled Vybout from 0 to 7,000+ registered users as the sole engineer, owning architecture, mobile, backend, and production operations.",

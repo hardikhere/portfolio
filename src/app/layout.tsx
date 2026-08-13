@@ -28,6 +28,7 @@ export const metadata: Metadata = {
     "React Native Developer",
     "Mobile Engineer Bengaluru",
     "Senior Software Engineer",
+    "Cars24",
     "Vybout",
     "Zepto",
     "Unacademy",
@@ -92,9 +93,10 @@ const personJsonLd = {
   sameAs: [GITHUB_URL, MEDIUM_URL, X_URL],
   worksFor: {
     "@type": "Organization",
-    name: "Vybout",
+    name: "Cars24",
   },
   alumniOf: [
+    { "@type": "Organization", name: "Vybout" },
     { "@type": "Organization", name: "Zepto" },
     { "@type": "Organization", name: "Unacademy" },
     { "@type": "Organization", name: "Mosaic Wellness" },
