@@ -19,6 +19,8 @@ export const watching: WatchingGroup[] = [
       { title: "Vinland Saga", favorite: true },
       { title: "Fullmetal Alchemist: Brotherhood" },
       { title: "Dr. House" },
+      { title: "Better Call Saul", favorite: true },
+      { title: "Breaking Bad" },
     ],
   },
   {
